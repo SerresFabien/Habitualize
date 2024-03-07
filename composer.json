@@ -1,0 +1,19 @@
+{
+  "name": "habitualize/web_app",
+  "config": {
+    "vendor-dir": "lib/vendor"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/the-yasmf-project/yasmf"
+    }
+  ],
+  "require": {
+    "php": ">=8.0",
+    "phpunit/phpunit": "10.0.*",
+    "phpstan/phpstan": "1.10.*",
+    "ext-pdo": "*",
+    "yasmf/yasmf": ">=1.6.1"
+  }
+}
