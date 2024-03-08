@@ -1,6 +1,6 @@
 <?php
 
-use Habitualize\yasmf\DataSource;
+use Habitualize\lib\vendor\yasmf\yasmf\src\yasmf\DataSource;
 
 $local = new DataSource (
     $host = 'localhost',

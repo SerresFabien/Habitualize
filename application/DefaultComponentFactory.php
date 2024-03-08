@@ -19,9 +19,10 @@
 
 namespace Habitualize\application;
 
-use Habitualize\yasmf\ComponentFactory;
-use Habitualize\yasmf\NoControllerAvailableForNameException;
-use Habitualize\yasmf\NoServiceAvailableForNameException;
+use Habitualize\controllers\HomeController;
+use Habitualize\lib\vendor\yasmf\yasmf\src\yasmf\ComponentFactory;
+use Habitualize\lib\vendor\yasmf\yasmf\src\yasmf\NoControllerAvailableForNameException;
+use Habitualize\lib\vendor\yasmf\yasmf\src\yasmf\NoServiceAvailableForNameException;
 
 
 /**
@@ -51,12 +52,11 @@ class DefaultComponentFactory implements ComponentFactory
     public function buildServiceByName(string $service_name): mixed
     {
         return match($service_name) {
-        //    "Forum" => $this->buildForumService(),
             default => throw new NoServiceAvailableForNameException($service_name)
         };
     }
 
-    private function buildHomeController() {
+    private function buildHomeController(): HomeController {
         return new HomeController();
     }
 }

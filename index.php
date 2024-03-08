@@ -8,8 +8,8 @@ require 'Autoloader.php';
 Autoloader::autoload();
 
 use Habitualize\application\DefaultComponentFactory;
-use Habitualize\yasmf\Router;
-use Habitualize\yasmf\NoControllerAvailableForNameException;
+use Habitualize\lib\vendor\yasmf\yasmf\src\yasmf\Router;
+use Habitualize\lib\vendor\yasmf\yasmf\src\yasmf\NoControllerAvailableForNameException;
 
 
 // Local dev
@@ -37,6 +37,8 @@ try {
         header('Location: index.php?action=error&code=500');
     } else {
         //controller or method invalid
+        var_dump($e->getMessage());
+        die;
         header('Location: index.php?action=error&code=404');
     }
     exit;
