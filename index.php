@@ -33,6 +33,8 @@ try {
     $router->route($PREFIX_TO_RELATIVE_PATH, $data_source);
 } catch (\Error | \PDOException | NoControllerAvailableForNameException $e) {
     if (get_class($e) == \PDOException::class) {
+        var_dump($e->getMessage());
+        die;
         //Database error
         header('Location: index.php?action=error&code=500');
     } else {

@@ -1,0 +1,85 @@
+/* Component CSS import */
+@import "components.css";
+
+/* Police import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Default style */
+:root {
+    --font: 'Roboto', 'Arial';
+    --red-color: #E63946;
+    --white-color: #F5F5F5;
+    --light-blue-color: #A8DADC;
+    --blue-color: #457B9D;
+    --dark-blue-color: #1D3557;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font);
+    color: var(--dark-blue-color);
+    background-color: var(--white-color);
+}
+
+a.link {
+    position: relative;
+    text-decoration: none;
+    color: var(--dark-blue-color);
+    margin-bottom: 10px;
+}
+
+a.link::before {
+    transition: 0.5s;
+    content: "";
+    width: 0;
+    height: 2px;
+    background: var(--red-color);
+    position: absolute;
+    bottom: -1px;
+}
+
+a.link:hover::before {
+    width: 100%;
+}
+
+section {
+    padding: 0 50px;
+}
+
+section.vh-100 {
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 45px;
+    font-weight: normal;
+}
+
+main {
+    /* Calculate with the size of the nav bar */
+    margin-top: 150px;
+}
+
+.txt-red {
+    color: var(--red-color);
+}
+
+button {
+    background-color: var(--red-color);
+    color: var(--white-color);
+    width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    padding: 20px 45px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 6px;
+}

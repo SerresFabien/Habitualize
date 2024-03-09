@@ -1,0 +1,29 @@
+/* Style for the main nav bar (home_page) */
+#nav-bar-main {
+    display: flex;
+    padding: 5px 30px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    background-color: var(--white-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#nav-bar-main img, svg {
+    height: 60px;
+    cursor: pointer;
+    stroke: var(--dark-blue-color);
+}
+
+#nav-bar-main div {
+    display: flex;
+    gap: 90px;
+}
+
+#nav-bar-main a {
+    font-size: 20px;
+}

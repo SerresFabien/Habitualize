@@ -1,0 +1,14 @@
+p {
+    font-size: 25px;
+}
+
+.txt-img {
+    display: flex;
+    justify-content: space-around;
+}
+
+.txt-img div {
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+}
