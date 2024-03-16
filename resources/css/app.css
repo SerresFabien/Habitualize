@@ -12,6 +12,7 @@
     --light-blue-color: #A8DADC;
     --blue-color: #457B9D;
     --dark-blue-color: #1D3557;
+    --grey-color: #C5C5C5;
 }
 
 * {
@@ -37,7 +38,7 @@ a.link::before {
     transition: 0.5s;
     content: "";
     width: 0;
-    height: 2px;
+    height: 3px;
     background: var(--red-color);
     position: absolute;
     bottom: -1px;
@@ -47,12 +48,17 @@ a.link:hover::before {
     width: 100%;
 }
 
+.btn-link {
+    text-decoration: none;
+}
+
 section {
     padding: 0 50px;
 }
 
 section.vh-100 {
     min-height: 100vh;
+    padding-top: 100px;
 }
 
 h1 {
@@ -82,4 +88,43 @@ button {
     cursor: pointer;
     transition: 0.3s;
     border-radius: 6px;
+}
+
+/* SCROLL BAR STYLE */
+/* Barre de défilement */
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: var(--white-color);
+}
+
+::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: var(--white-color);
+}
+
+::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: var(--grey-color);
+}
+
+/* FOOTER STYLE */
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.line-footer {
+    width: 700px;
+    height: 10px;
+    background-color: var(--dark-blue-color);
+}
+
+.content-footer {
+    display: flex;
 }
