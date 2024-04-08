@@ -41,7 +41,7 @@
             </section>
 
             <!-- Services section -->
-            <section id="services" class="vh-100">
+            <section id="services" class="vh-100 menu">
                 <p>
                     Chez Habitualize, nous proposons une gamme de services pour vous aider à développer
                     <br> et réussir dans vos objectifs personnels. Nos services comprennent :
@@ -69,7 +69,7 @@
             </section>
 
             <!-- Nous rejoindre section -->
-            <section id="join_us">
+            <section id="join_us" class="menu">
                 <div class="big-card">
                     <div>
                         <p>
