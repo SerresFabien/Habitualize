@@ -91,11 +91,13 @@
                 <div>
                     <p>Contact</p>
                     <a>Contactez-nous</a>
-                    <a>Mentions légales</a>
                 </div>
                 <div>
                     <p>Aide</p>
-                    <a>Centre d'aide</a>
+                    <ul>
+                        <li><a>Mentions légales</a></li>
+                        <li><a>Centre d'aide</a></li>
+                    </ul>
                 </div>
             </div>
         </footer>

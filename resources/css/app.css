@@ -114,17 +114,28 @@ button {
 
 /* FOOTER STYLE */
 footer {
-    display: flex;
-    justify-content: center;
     margin-top: 150px;
+    margin-bottom: 100px;
 }
 
 .line-footer {
-    width: 700px;
+    width: 50%;
     height: 10px;
     background-color: var(--dark-blue-color);
+    margin-left: calc(100% - 50% - 25%);
 }
 
 .content-footer {
     display: flex;
+    margin-top: 50px;
+    gap: 15%;
+    align-items: center;
+}
+
+.content-footer img {
+    height: 100px;
+}
+
+.content-footer ul {
+    list-style-type: none;
 }
