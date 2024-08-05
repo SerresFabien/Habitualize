@@ -58,6 +58,9 @@ section {
 
 section.vh-100 {
     min-height: 100vh;
+}
+
+section.menu {
     padding-top: 100px;
 }
 

@@ -7,7 +7,7 @@ $local = new DataSource (
     $port = 3306, 
     $db_name = 'habitualize',
     $user = 'root', 
-    $pass = '',
+    $pass = 'root',
     $charset = 'utf8mb4'
 );
 
